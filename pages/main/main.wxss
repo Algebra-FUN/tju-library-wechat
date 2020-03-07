@@ -1,0 +1,43 @@
+/* pages/main/main.wxss */
+@import "../../template/footer/footer.wxss";
+
+.v-header {
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+}
+
+.v-footer {
+  position: fixed;
+  bottom: 0px;
+  z-index: 10;
+}
+
+.v-searchView {
+  position: fixed;
+  top: 140rpx;
+  z-index: 10;
+}
+
+.v-bookList {
+  position: relative;
+  top: 280rpx;
+  padding-bottom: 400rpx;
+}
+
+.book-ani {
+  animation: book-animation ease-in-out 0.6s;
+}
+
+@keyframes book-animation {
+  0% {
+    opacity: 0;
+    transform: translateX(-75rpx);
+    filter: blur(20rpx);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0rpx);
+  }
+}

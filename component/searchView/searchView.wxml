@@ -1,0 +1,5 @@
+<!--component/searchView.wxml-->
+<view class='sv-box'>
+    <input class='sv-input' placeholder='输入关键字进行书目检索' bindinput='getInput'/>
+    <button class='sv-button {{aniClass}}' bindtap='submitSearch' bindtouchstart='onTouchStart' bindtouchend='onTouchEnd'>查询</button>
+  </view>

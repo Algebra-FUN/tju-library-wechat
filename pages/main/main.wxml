@@ -1,0 +1,20 @@
+<import src='../../template/footer/footer.wxml' />
+
+<view class='html'>
+  <view class='v-header'>
+    <header />
+  </view>
+  <view class='v-searchView'>
+    <searchView bind:searchRequest='toSearch' />
+  </view>
+  <view class='v-bookList'>
+    <block wx:for='{{bookDataArr}}' wx:for-index='i' wx:for-item='bookData'>
+      <view class="{{(i+11-10*page)>0?bookAniClass:''}}" style="animation-duration: {{(i+11-10*page)*0.5}}s">
+        <bookCard bookData='{{bookData}}' />
+      </view>
+    </block>
+  </view>
+  <view class='v-footer'>
+    <template is='footer' />
+  </view>
+</view>

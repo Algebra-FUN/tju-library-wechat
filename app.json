@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/detailPage/detailPage",
+    "pages/favorBook/favorBook"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#e53935",
+    "navigationBarTitleText": "北洋帝国图书馆"
+  }
+}

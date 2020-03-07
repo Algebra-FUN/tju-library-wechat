@@ -1,0 +1,17 @@
+<!--component/bookCard/bookCard.wxml-->
+<view class="bk-card g-card {{aniClass}}" bindtap="requestDetail" bindtouchstart='onTapStart' bindtouchend='onTapEnd'>
+    <view class='left-container'>
+     <image class='bk-img' src="{{imgOK?bookData.cover:'../../assets/image-error.png'}}" binderror='imgerr' mode='aspectFit'/>
+    </view>
+    <view class='right-container'>
+        <view class="bookTitle" style="font-size:{{bookData.title.length<15?'30':'20'}}rpx;">{{bookData.title}}</view>
+        <view class="details-box">
+            <view class="bookdetail" style="font-size:{{bookData.author.length<24?'20':'15'}}rpx;">作者：{{bookData.author}}</view>
+            <view class="bookdetail">出版：{{bookData.publisher}}</view>
+            <view class="moredetail">
+                <view class="bookdetail year">年份：{{bookData.year}}</view>
+                <view class="bookdetail isbn">isbn：{{bookData.isbn}}</view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,8 @@
+{
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "searchView": "/component/searchView/searchView",
+    "bookCard":"/component/bookCard/bookCard",
+    "header":"/component/header/header"
+  }
+}

@@ -1,0 +1,54 @@
+/* pages/favorBook/favorBook.wxss */
+
+@import "../../app.wxss";
+
+.m-card{
+  margin-top:-100rpx; 
+}
+
+.title{
+  font-size: 45rpx;
+  margin:40rpx;
+  margin-right:10rpx;
+  margin-bottom:50rpx;
+}
+
+.v-doesFavor{
+  position:relative;
+  top:65rpx;
+  left:500rpx;
+  z-index: 10;
+}
+
+.img-fav{
+  width:200rpx;
+  height:180rpx;
+}
+
+.h-box{
+  display: flex;
+  justify-content:space-around;
+}
+
+.bn-undel{
+  width:120rpx;
+  height:70rpx;
+  margin-top:40rpx;
+  margin-right:200rpx;
+  font-size:28rpx;
+  transition: all ease-in-out .6s;
+  transform-origin: 50% 50%;
+}
+
+.bn-true{
+  opacity: 1;
+  transform: scale(1);
+  font-size:28rpx;
+}
+
+.bn-false{
+  opacity: 0;
+  transform: scale(0);
+  font-size:0;
+}
+

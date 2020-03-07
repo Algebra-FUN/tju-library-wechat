@@ -1,0 +1,49 @@
+<!--pages/detailPage/detailPage.wxml-->
+
+<view class='v-favor' bindtap='tapFavor'>
+  <image class='img-fav' style="opacity: {{favor?'1':'0'}}" src='../../assets/fav.png' mode='aspectFit' />
+  <image class='img-fav' style="opacity: {{favor?'0':'1'}}" src='../../assets/unfav.png' mode='aspectFit' />
+</view>
+<view class='html'>
+  <view class='g-card basic-card' style="height:{{isMore?'650rpx':'460rpx'}}">
+    <view class='top-bar'>
+      <image class='icon-svg' src='../../assets/icon-basicinfo.svg' mode='aspectFit' />
+      <view class='bar-title'>基本信息</view>
+    </view>
+    <view class='card-content'>
+      <image class='image' src="{{imgOK?bookData.cover:'../../assets/image-error.png'}}" binderror='imgerr' mode='aspectFill' />
+      <view class='detail-content'>
+        <view class='book-title'>{{bookData.title}}</view>
+        <view class='book-detail'>作者：{{bookData.authorPrimary[0]}}</view>
+        <view class='book-detail'>出版社：{{bookData.publisher}}</view>
+        <view class='book-detail'>年份：{{bookData.year}}</view>
+        <view class='book-detail'>isbn：{{bookData.isbn}}</view>
+        <view class="book-detail ani-{{moreState}}" style="animation-duration:{{isMore?'.4s':'.6s'}}">价格：{{bookData.price}}</view>
+        <view class="book-detail ani-{{moreState}}" style="animation-duration:{{isMore?'.6s':'.4s'}}">入馆时间：{{bookData.holding[0].indate}}</view>
+        <view class="book-detail ani-{{moreState}}" style="animation-duration:{{isMore?'.8s':'.2s'}}">图书类型：{{bookData.holding[0].type}}</view>
+        <view class="book-detail ani-{{moreState}}" style="animation-duration:{{isMore?'1s':'0s'}}">地区：{{bookData.place}}</view>
+        <view class='v-more' style="transform: {{isMore?'rotate(180deg)':'translateY(-180rpx)'}}">
+          <image class='more g-springing-ani' src='../../assets/more.svg' mode='aspectFit' bindtap='toMore' />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='g-card location-card'>
+    <view class='top-bar'>
+      <image class='icon-svg' src='../../assets/icon-location.svg' mode='aspectFit' />
+      <view class='bar-title'>在馆位置</view>
+    </view>
+    <view class='list'>
+      <view class='list-item-title'>索书位置&编码</view>
+      <view class='list-item-title'>所在的馆区</view>
+      <view class='list-item-title'>在馆状态</view>
+    </view>
+    <block wx:for='{{bookData.holding}}' wx:for-item='item'>
+      <view class='list'>
+        <view class='list-item-detail'>{{item.callno}}</view>
+        <view class='list-item-detail'>{{item.local}}</view>
+        <view class='list-item-detail'>{{item.state}}</view>
+      </view>
+    </block>
+  </view>
+</view>

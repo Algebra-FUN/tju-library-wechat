@@ -1,0 +1,20 @@
+.footer-box{
+  width:750rpx;
+  height:100rpx;
+  background-color: #e53935;
+  text-align: center;
+  padding-top:20rpx;
+  padding-bottom:20rpx;
+}
+
+.footer-findus{
+  color:white;
+  font-size:22rpx;
+  margin:5rpx;
+}
+
+.footer-right{
+  color:white;
+  font-size:15rpx;
+  margin:5rpx;
+}

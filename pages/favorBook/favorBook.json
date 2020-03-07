@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "favBook": "/component/favBook/favBook"
+  }
+}

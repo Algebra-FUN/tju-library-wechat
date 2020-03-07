@@ -1,0 +1,83 @@
+/* component/favBook/favBook.wxss */
+
+.container{
+  margin:30rpx;
+  margin-top:0rpx;
+}
+
+.title-container{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.book-container{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.title{
+  padding:10rpx;
+  font-size:35rpx;
+}
+
+.book-detail{
+  padding:5rpx;
+  margin-top:10rpx;
+  font-size:20rpx;
+}
+
+.clear-bn{
+  padding-top:8rpx;
+  padding-right: 15rpx;
+  transition: all ease-in-out .6s;
+  transform-origin: 50% 50%;
+  z-index: 10;
+}
+
+.bn-true{
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+.bn-false{
+  opacity: 0;
+  transform: scale(0) rotate(180deg);
+}
+
+.v-loading{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  top:25rpx;
+  z-index: 10;
+  transform: translateY(30rpx);
+  transition: all ease-in-out .6s;
+}
+
+.ball{
+  width:20rpx;
+  height: 20rpx;
+  border-radius: 10rpx;
+  background:lightgrey;
+  transform-origin: 50% 50%;
+  transition: all ease-in-out .6s;
+}
+
+.ball{
+  animation: loading-ani alternate-reverse .6s infinite;
+}
+
+@keyframes loading-ani{
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(2);
+  }
+}
+
+.content{
+  transition: all .6s;
+}

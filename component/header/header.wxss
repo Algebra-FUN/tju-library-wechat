@@ -1,0 +1,26 @@
+/* component/header.wxss */
+
+@import "../../app.wxss";
+
+.header-box{
+  width:750rpx;
+  height:140rpx;
+  background-color: #e53935;
+}
+
+.header-logo{
+  width:500rpx;
+  height:140rpx;
+  margin-left:50rpx;
+  background-color: #e53935;
+  float:left;
+}
+
+.header-account{
+  width:72rpx;
+  height:72rpx;
+  margin:37rpx;
+  margin-right:40rpx;
+  background-color: #e53935;
+  float:right;
+}

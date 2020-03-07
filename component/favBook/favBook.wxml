@@ -1,0 +1,22 @@
+<!--component/favBook/favBook.wxml-->
+
+<view class='container' bindtap='goDetail' bindlongtap='triggerDelete'>
+  <view class='v-loading' style="opacity:{{onLoading?'1':'0'}}">
+    <block wx:for='123456' wx:for-index='i'>
+      <view class='ball' style="animation-delay:{{0.6*(i%2)}}s"/>
+    </block>
+  </view>
+  <view class='content' style="opacity:{{onLoading?'0':'1'}}">
+    <view class='title-container'>
+      <view class='title'>{{bookData.title}}</view>
+      <view class='clear-bn bn-{{onDelete}}' bindtap='removeBook'>
+        <icon type='clear' color='grey' size='20' />
+      </view>
+    </view>
+    <view class='book-container'>
+      <view class='book-detail'>{{bookData.authorPrimary[0]}}</view>
+      <view class='book-detail'>{{bookData.publisher}}</view>
+      <view class='book-detail'>{{bookData.year}}</view>
+    </view>
+  </view>
+</view>

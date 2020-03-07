@@ -1,0 +1,48 @@
+/* * public style sheet
+    *  'g-xx' where 'g' = 'global'
+*/
+
+Page{
+  width:100%;
+  overflow-x:hidden;
+}
+
+.g-springing-ani{
+  animation: g-springing-ani infinite 10s;
+}
+
+@keyframes g-springing-ani{
+  0%{
+    transform: scale(1);
+  }
+  88%{
+    transform: scale(1);
+  }
+  90%{
+    transform: scale(1.7);
+  }
+  92%{
+    transform: scale(1);
+  }
+  94%{
+    transform: scale(1.7);
+  }
+  96%{
+    transform: scale(1);
+  }
+  98%{
+    transform: scale(1.7);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.g-card{
+  width:600rpx;
+  background-color: white;
+  box-shadow: 2rpx 2rpx 10rpx grey;
+  margin-left:54rpx;
+  margin-bottom:50rpx;
+  padding:27rpx;
+}

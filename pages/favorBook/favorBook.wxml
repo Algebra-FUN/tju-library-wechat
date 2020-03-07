@@ -1,0 +1,15 @@
+<!--pages/favorBook/favorBook.wxml-->
+
+<view class='v-doesFavor'>
+  <image class='img-fav' src='../../assets/fav.png' mode='aspectFit' />
+</view>
+
+<view class='g-card m-card'>
+  <view class='h-box'>
+    <view class='title'>我的收藏</view>
+    <button class='bn-undel bn-{{userDel}}' bindtap='cancelDel'>完成</button>
+  </view>
+  <block wx:for='{{favList}}' wx:for-item='favIndex'>
+    <favBook index='{{favIndex}}' onDelete='{{userDel}}'  bind:removeFav='onRemoveFav' bind:onDelE='onDelE'/>
+  </block>
+</view>

@@ -1,0 +1,82 @@
+/* component/bookCard/bookCard.wxss */
+@import "../../app.wxss";
+
+.bk-card{
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-ani{
+  animation: bk-card-ani ease-in-out .6s;
+}
+
+@keyframes bk-card-ani{
+  0%{
+    transform: translateX(0);
+    transform: translateY(0);
+    box-shadow: 2rpx 2rpx 10rpx grey;
+  }
+  50%{
+    transform: translateX(5rpx);
+    transform: translateY(5rpx);
+    box-shadow: 2rpx 2rpx 7rpx grey;
+  }
+  100%{
+    transform: translateX(0);
+    transform: translateY(0);
+    box-shadow: 1rpx 1rpx 10rpx grey;
+  }
+}
+
+.left-container{
+  width: 160rpx;
+  height: 210rpx;
+  background-color: ghostwhite;
+}
+
+.right-container{
+  width: 380rpx;
+  height: 210rpx;
+  background-color: rgb(248,248,248);
+}
+
+.bookTitle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 370rpx;
+  height: 65rpx;
+  background-color: rgb(114,114,114);
+  color:white;
+  padding-left:10rpx;
+  margin-bottom: 10rpx;
+}
+
+.bookdetail{
+  display: flex;
+  align-items: center;
+  height:40rpx;
+  color:black;
+  font-size: 20rpx;
+  padding-left:10rpx;
+}
+
+.moredetail{
+  overflow: auto;
+  font-size: 7rpx;
+}
+
+.year{
+  float:left;
+}
+
+.isbn{
+  float:right;
+  margin-right:10rpx;
+}
+
+.bk-img{
+  width: 160rpx;
+  height: 210rpx;
+}
+

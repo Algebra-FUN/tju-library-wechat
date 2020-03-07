@@ -1,0 +1,9 @@
+<template name='footer'>
+  <view class='footer-box'>
+    <view class='footer-findus'>
+      加入我们--联系我们--问题反馈
+    </view>
+    <view class='footer-right'>POWERED BY TWT STUDIO</view>
+    <view class='footer-right'>CREATED BY CreatorFan</view>
+  </view>
+</template>

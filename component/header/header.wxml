@@ -1,0 +1,7 @@
+<!--component/header.wxml-->
+<view class='header-box'>
+  <image class='header-logo' src='../../assets/headerlogo.svg' mode='aspectFit'/>
+  <view bindtap='requestML'>
+    <image class='header-account g-springing-ani' src='../../assets/account.svg' mode='aspectFit'/>
+  </view>
+ </view>
